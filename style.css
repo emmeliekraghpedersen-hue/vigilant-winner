@@ -1,3 +1,278 @@
+```css
+/* ---------------------------------------------------
+   GENERELT
+--------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #111;
+    color: white;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 8%;
+    border-bottom: 1px solid #333;
+}
+
+
+/* ---------------------------------------------------
+   HOVEDOVERSKRIFTER
+--------------------------------------------------- */
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    color: #00ffff;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------
+   ALMINDELIG TEKST
+--------------------------------------------------- */
+
+p {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------
+   ABOUT
+--------------------------------------------------- */
+
+.about-text {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-text h4 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-gri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-in {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.about-in h5 {
+    color: #00ffff;
+    font-size: 20px;
+}
+
+
+/* ---------------------------------------------------
+   LANGUAGES
+--------------------------------------------------- */
+
+.languages {
+    min-height: auto;
+}
+
+.Tech_header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.languages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 80px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill-box {
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.skill-box h3 {
+    color: #00ffff;
+    font-size: 25px;
+}
+
+
+/* ---------------------------------------------------
+   EXPERIENCE
+--------------------------------------------------- */
+
+.experience-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.experience-content .box {
+    padding: 35px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+
+/* ---------------------------------------------------
+   SKILLS
+--------------------------------------------------- */
+
+.skills-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 80px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills-content .box {
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.skills-content .box h3 {
+    color: #00ffff;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* Gør den tredje skill bred */
+.skills-content .box:nth-child(3) {
+    grid-column: 1 / 3;
+}
+
+
+/* ---------------------------------------------------
+   ACHIEVEMENTS
+--------------------------------------------------- */
+
+.portfolio-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.achievement .row {
+    padding: 35px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.row-text h4 {
+    color: #00ffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.achievement .row p {
+    margin-bottom: 15px;
+}
+
+
+/* ---------------------------------------------------
+   PROJECTS
+--------------------------------------------------- */
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 80px;
+}
+
+.portfolio .row {
+    padding: 40px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.portfolio .row h3 {
+    color: #00ffff;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* ---------------------------------------------------
+   CONTACT
+--------------------------------------------------- */
+
+.contact-text {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-text h4 {
+    color: #00ffff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    margin-top: 30px;
+}
+
+.contact-list li {
+    list-style: none;
+    margin: 15px;
+}
+
+.contact-list a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ---------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    .section-title h2 {
+        font-size: 35px;
+    }
+
+    .about-gri,
+    .languages-grid,
+    .skills-content,
+    .portfolio-content {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-content .box:nth-child(3) {
+        grid-column: auto;
+    }
+
+}
+```
+
+
 *{
     padding: 0;
     margin: 0;
